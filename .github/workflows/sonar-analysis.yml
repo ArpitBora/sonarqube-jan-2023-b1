@@ -29,7 +29,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       #run: mvn -B package --file pom.xml
-      run: mvn clean verify sonar:sonar -Dsonar.projectKey=sonarqube-jan-2023-b1 -Dsonar.host.url=http://172.31.6.126:9000 -Dsonar.login=sqp_2d540facf55cc22309f63c75562819a21f88bc8d
+      run: mvn clean verify sonar:sonar -Dsonar.projectKey=sonarqube-jan-2023-b1 -Dsonar.host.url=http://65.2.107.142:9000 -Dsonar.login=sqp_2d540facf55cc22309f63c75562819a21f88bc8d
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
